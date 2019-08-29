@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <Button
+        android:id="@+id/recordBtn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_margin="20dp"
+        android:background="@drawable/recordbutton"
+        android:onClick="stBtnOnClick"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/head"
+        android:text="扫 雷"
+        android:gravity="center"
+        android:textFontWeight="4dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/textviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </FrameLayout>
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:layout_margin="20dp"
+        android:text="开始"
+        android:background="@drawable/top_button_shap"
+        android:onClick="stBtnOnClick"
+        />
+    <TextView
+        android:id="@+id/timerView"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp" />
+
+</LinearLayout>
